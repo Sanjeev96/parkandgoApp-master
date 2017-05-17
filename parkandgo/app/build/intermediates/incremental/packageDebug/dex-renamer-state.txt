@@ -1,0 +1,7 @@
+#Sat Mar 25 13:10:29 GMT 2017
+base.0=C\:\\Users\\SANJEEV96\\Desktop\\Project versions\\not working\\parkandgo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6f214dd6bbbc9630e75fb0bb7181a07985ddcc0f
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\SANJEEV96\\Desktop\\Project versions\\not working\\parkandgo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_dcc530db7caf68aa3e5142b854c64c1debd4d781\\classes.dex
+base.1=C\:\\Users\\SANJEEV96\\Desktop\\Project versions\\not working\\parkandgo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_dcc530db7caf68aa3e5142b854c64c1debd4d781
+file.0=C\:\\Users\\SANJEEV96\\Desktop\\Project versions\\not working\\parkandgo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6f214dd6bbbc9630e75fb0bb7181a07985ddcc0f\\classes.dex

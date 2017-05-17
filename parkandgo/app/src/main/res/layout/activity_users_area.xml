@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_area"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.UserAreaActivity">
+
+
+    <Button
+        android:text="Pay "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPay"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnPaydets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Details "
+        android:layout_marginBottom="12dp"
+        android:layout_above="@+id/etVehicleReg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:hint="Enter Vehicle Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/etVehicleReg"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter 2-8 digit Code"
+        android:inputType="number"
+        android:textColor="@android:color/white"
+        android:layout_above="@+id/edtStreet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp" />
+
+    <EditText
+        android:hint= "Street Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/edtStreet"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/btnPay"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnPaydets"
+        android:layout_toEndOf="@+id/btnPaydets" />
+
+    <CheckBox
+        android:id="@+id/cbGPS"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GPS Location"
+        android:layout_alignBottom="@+id/edtStreet"
+        android:layout_toRightOf="@+id/btnPay"
+        android:layout_toEndOf="@+id/btnPay"
+        android:layout_marginBottom="31dp" />
+
+
+</RelativeLayout>
+
