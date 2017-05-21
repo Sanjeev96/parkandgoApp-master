@@ -67,8 +67,9 @@ public class UserAreaActivity extends AppCompatActivity {
 
                     if ((txtCode.getText().toString().trim().equals("") && !txtStreetName.getText().toString().trim().equals("")) /** if both fields are empty*/
                             ||   // pass to next activity of one of the two is filled*/
-                            (!txtCode.getText().toString().trim().equals("") && txtStreetName.getText().toString().trim().equals(""))) {
-                        // On button click if conditons are met pass through to payment activity*/
+
+                            (!(txtCode.getText().length() !=4) && txtStreetName.getText().toString().trim().equals(""))) {// On button click if conditons are met pass through to payment activity*/
+
                         Intent payIntent = new Intent(UserAreaActivity.this, PaymentActivity.class);// creates intent to open payment details
                         UserAreaActivity.this.startActivity(payIntent);//Performs intent to open payment page
                     } else {
