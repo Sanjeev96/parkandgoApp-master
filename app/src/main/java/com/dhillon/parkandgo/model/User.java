@@ -7,9 +7,9 @@ public class User {
     private String name;
     private String email;
     private String password;
-    private String cardnum;
-    private String expirydate;
-    private String securitycode;
+    private boolean cardnum;
+    private boolean expirydate;
+    private boolean securitycode;
 
     public int getId() {
         return id;
@@ -40,20 +40,20 @@ public class User {
     }
 
 
-    public String getCardnum() {
+    public boolean getCardnum() {
         return cardnum;
     }
-    public void setCardnum(String cardnum) {this.cardnum = cardnum;}
+    public void setCardnum(boolean cardnum) {this.cardnum = cardnum;}
 
-    public String getExpirydate() {
+    public boolean getExpirydate() {
         return expirydate;
     }
-    public void setExpirydate(String expirydate) {this.expirydate = expirydate;}
+    public void setExpirydate(boolean expirydate) {this.expirydate = expirydate;}
 
-    public String getSecuritycode() {
+    public boolean getSecuritycode() {
         return securitycode;
     }
-    public void setSecuritycode(String securitycode) {this.securitycode = securitycode;}
+    public void setSecuritycode(boolean securitycode) {this.securitycode = securitycode;}
 
 }
 

@@ -115,11 +115,17 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
             return;
         } else {
 
-            // Places data entered into EditextFields into db if valadations is successful.
+            // Places data entered into EditextFields into db if validations is successful.
 
-            user.setCardnum(txtEditCardNum.getText().toString().trim());
-            user.setExpirydate(txtEditExpiryDate.getText().toString().trim());
-            user.setSecuritycode(txtEditSecuirtyCode.getText().toString().trim());
+
+           // user.setCardnum(txtEditCardNum.getText().toString().trim());
+           //user.setExpirydate(txtEditExpiryDate.getText().toString().trim());
+           //user.setSecuritycode(txtEditSecuirtyCode.getText().toString().trim());
+
+            //Attempt to validate fields interms of required characters(unsuccessful will come back to later)
+            user.setCardnum(txtEditCardNum.getText().length()!=16);
+            user.setExpirydate(txtEditExpiryDate.getText().length()!=5);
+            user.setSecuritycode(txtEditSecuirtyCode.getText().length()!=3);
 
             databaseHelper.addUser(user);
 
